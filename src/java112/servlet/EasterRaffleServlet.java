@@ -62,11 +62,11 @@ import java.util.*;
 
         if (age >= 0 && age <= 10) {
         request.setAttribute("prize", "You won an Easter basket filled with candies!");
-    } else if (age > 10 && age <= 20) {
+        } else if (age > 10 && age <= 20) {
         request.setAttribute("prize", "You won an Easter themed jewelry set!");
-    } else if (age > 20 && age <= 100) {
-        request.setAttribute("prize", "You won gourmet Easter chocolates and a wine set!");
-    }
+        } else if (age > 20 && age <= 100) {
+            request.setAttribute("prize", "You won gourmet Easter chocolates and a wine set!");
+        }
 
         // Forward the request to the JSP for display
         String url = "/index.html";
