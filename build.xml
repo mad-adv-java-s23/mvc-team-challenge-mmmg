@@ -5,7 +5,7 @@
 
 <project default="deploy">
 
-  <property name="user_home" value="/home/student" />
+  <property name="user_home" value="${user.home}" />
   <property name="project_home" value="${user_home}/GitHubRepos/teamMVC" />
   <property name="tomcat" value="${user_home}/tomcat" />
   <property name="src" value="src"/>

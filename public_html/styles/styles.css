@@ -1,0 +1,154 @@
+@charset "utf-8";
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+    font-size: 16px;
+}
+header {
+    margin-top: 10em;
+    text-align: center;
+}
+header h1 {
+    font-size: 50px;
+    border-bottom: 2px solid rgb(209, 255, 197);
+    width: 600px;
+    height: 60px;
+    margin: 0 auto;
+}
+main h2 {
+    margin: 20px;
+    text-align: center;
+}
+main p {
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    font-size: 20px;
+}
+body {
+    background-color: grey;
+    font-family: futura-pt, sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    padding: 20px;
+}
+.container2 {
+    background-image: url(/images/projectBackground2.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 15px;
+    border-radius: 4px;
+    background-color: #dbdbdb;
+    border: 3px solid rgb(176, 246, 255);
+    box-shadow: 0 0 20px rgb(46, 224, 255);
+}
+.c-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.c-form-label {
+    display: inline-block;
+    margin: .5rem 0;
+    color: #3d3935;
+    letter-spacing: .2px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.c-form-input {
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid #3d3935;
+    border-radius: 4px;
+    background-color: #6d6d6d;
+    color: #ffffff;
+    outline: 0;
+}
+.c-form-input::placeholder {
+    color: #ffffff;
+    font-size: 1rem;
+}
+.c-form-required {
+    color: #b0092d;
+}
+textarea.c-form-input {
+    width: 100%;
+    min-height: 10ch;
+    max-height: 120ch;
+    padding: 10px;
+    resize: none;
+}
+
+fieldset {
+    margin: .4rem 0;
+    padding: 0;
+    border: none;
+}
+.c-form-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #a3ffa2;
+    color: #222222;
+    font-size: 1.125rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+.popup {
+    width: 600px;
+    margin-left: -105px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    transform: translate(-50% -50%);
+    text-align: center;
+    padding: 0 0px 200px;
+    color: blue;
+    visibility: hidden;
+}
+.popup button {
+    width: 30%;
+    font-size: 30px;
+    position: absolute;
+    bottom: 20px;
+    transform: translateX(-50%);
+    
+}
+.open-popup{
+    visibility: visible;
+}
+footer {
+    text-align: center;
+}
+@media screen and (min-width: 481px) {
+    .two-columns {
+        grid-template-columns: 48.7804878% 48.7804878%;
+        grid-column-gap: 2.43902439%;
+  }
+}
