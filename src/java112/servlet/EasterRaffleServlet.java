@@ -60,6 +60,7 @@ import java.util.*;
         // Add the EasterRequestData object as an attribute to the request
         request.setAttribute("easterRequestData", raffle);
 
+        // Assign prize based on age
         if (age >= 0 && age <= 10) {
         request.setAttribute("prize", "You won an Easter basket filled with candies!");
         } else if (age > 10 && age <= 20) {
