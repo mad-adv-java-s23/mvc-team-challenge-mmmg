@@ -19,7 +19,7 @@ import java.util.*;
     private String firstName;
     private String phone;
     private int age;
-    private String grade;
+    private String prize;
 
     /**
      *  Gets the lastName attribute
@@ -90,20 +90,20 @@ import java.util.*;
         this.age = age;
     }
     /**
-     *  Gets the grade attribute
+     *  Gets the prize attribute
      *
-     *@return grade
+     *@return prize
      */
-    public String getGrade() {
-        return grade;
+    public String getPrize() {
+        return prize;
     }
 
     /**
-     *  Sets the grade attribute
+     *  Sets the prize attribute
      *
-     *@param grade new Data value
+     *@param prize new Data value
      */
-    public void setGrade(String grade) {
-        this.grade = grade;
+    public void setPrize(String prize) {
+        this.prize = prize;
     }
  }
