@@ -19,7 +19,7 @@
             on their age range.</p>
       <div id="container">
         <div class="form-box">
-          <form class="c-form" name="c-form" action="easterPrize" method="get" onSubmit="return submitForm(event);">
+          <form class="c-form" name="c-form" action="easterPrize" method="GET" enctype="multipart/form-data">
               <fieldset>
                 <label class="c-form-label" for="last-name">Last name<span class="c-form-required"> *</span></label>
                 <input id="last-name" class="c-form-input" type="text" name="your-last-name" placeholder="Your last name" required>
