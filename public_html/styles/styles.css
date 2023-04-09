@@ -46,7 +46,7 @@ body {
     padding: 20px;
 }
 .container2 {
-    background-image: url(/images/projectBackground2.png);
+    background-image: url(../images/projectBackground2.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -138,7 +138,7 @@ fieldset {
     position: absolute;
     bottom: 20px;
     transform: translateX(-50%);
-    
+
 }
 .open-popup{
     visibility: visible;

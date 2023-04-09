@@ -31,6 +31,7 @@ import java.util.*;
             EasterRequestData raffle = new EasterRequestData();
 
             /* Assigns values to the properties of the HttpRequest Data object */
+            if (request != null) {
             raffle.setLastName(request.getParameter("your-last-name"));
             raffle.setFirstName(request.getParameter("your-first-name"));
             raffle.setPhone(request.getParameter("your-phone-number"));
@@ -41,7 +42,7 @@ import java.util.*;
             request.setAttribute("userFirstName", raffle);
             request.setAttribute("userPhone", raffle);
             request.setAttribute("userAge", raffle);
-
+        }
               // Assign prize based on age
             if (Integer.parseInt(request.getParameter("your-age")) >= 0 && Integer.parseInt(request.getParameter("your-age")) <= 10) {
             raffle.setPrize("You won an Easter basket filled with candies!");
@@ -56,11 +57,11 @@ import java.util.*;
             raffle.setPrize("You won a Easter basket filled with candy, Easter themed jewelry set, gourmet Easter chocolates, and a wine set!");
             request.setAttribute("userPrize", raffle);
             }
-            
+
         // Forward the request to the JSP for display
-        
+
         String url = "/easterPrize.jsp";
-        
+
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
     }

@@ -14,7 +14,7 @@ import java.util.*;
 
  @WebServlet(name = "easterRaffle", urlPatterns = { "/easterRaffle" })
 
- public class EasterServlet extends HttpServlet {
+ public class Diagram extends HttpServlet {
 
     /**
      * Handles GET requests for the Servlet.
@@ -70,7 +70,7 @@ import java.util.*;
         }
 
         // Forward the request to the JSP for display
-        String url = "/index.html";
+        String url = "/diagram.jsp";
         RequestDispatcher dispatcher = request.getRequestDispatcher(url);
         dispatcher.forward(request, response);
     }
